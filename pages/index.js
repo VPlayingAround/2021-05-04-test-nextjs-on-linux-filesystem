@@ -1,16 +1,14 @@
 import Koppie from "next/head"
+import ArticleList from "../components/ArticleList"
 
 export default function Home({ articles }) {
-  console.log(articles)
   return (
     <div>
       <Koppie>
         <title>amazing</title>
       </Koppie>
-      <h1>yhello</h1>
-      <div>
-        poep <a href="about">about</a>
-      </div>
+
+      <ArticleList articles={articles} />
     </div>
   )
 }
